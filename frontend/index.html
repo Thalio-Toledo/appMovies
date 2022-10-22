@@ -5,32 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/components/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    
     <title>MOvies</title>
 </head>
-<body class="container">
-    <div class="login">
+<body background="../frontend/assets/img/bg.jpg">
+    <section>
+        
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="./index.html">NERDFLIX</a></li>
+              <li>
+              <div >
+                <label for="search" class="sr-only"></label>
+                <input type="text" name="search" id="search" placeholder="O que deseja encontrar?" class="search__input">
+                
+              </div>
+            </li>
 
-    <header class="titulo">AppMovies</header>
-    <main class="menu">
-        <ul>
-            <li>Faça seu Login</li>
-            <li>System under development</li>
-        </ul>
-    </main>
+              <li>
+                <button href="#" class="login" id="open-modal">LOGIN</button>
+              </li>
+              
+            </ul>
+          </div>
+          
+    </section>  
+
+    <section>
+     
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Faça seu</h2>
+        <button id="close-modal">X</button>
+      </div>
+      <div class="modal-body">
+
         <div id="fundo">
-            <h1>Login</h1>
-            <input type="email" placeholder= "email" name="email" id="login-email">
-            <br><br>
-            <input type="password" placeholder="senha" id="login-senha">
-            <br><br>
-            <button id="enviar"> Submit </button>
+          <h1>Login</h1>
+          <input type="email" placeholder= "email" name="email" id="login-email">
+          <br><br>
+          <input type="password" placeholder="senha" id="login-senha">
+          <br><br>
+          <button id="enviar"> Submit </button>
 
-        </div>
+      </div>
+      </div>
+    </div>
+    </section>
    
 
           
     </div>
     <script src="./assets/script/main.js" type="module"></script>
     <script src="back-login.js"  type="module" ></script>
+    <script src="./assets/script/login_modal.js" type="module"></script>
 </body>
 </html>

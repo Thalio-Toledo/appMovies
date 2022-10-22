@@ -2,5 +2,16 @@
 @import url('../components/login.css');
 @import url('../components/header.css');
 @import url('../components/menu.css');
+@import url('../components/login_modal.css');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
 

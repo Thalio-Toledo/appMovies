@@ -1,5 +1,62 @@
-.menu{
-    background-color: rgb(175, 199, 230);
-    color: antiquewhite;
+.menu {
+    background-color:  rgba(0, 0, 0, 0.44);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-shadow: 1px 1px 5px #888888;
+    
+   
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+  }
+  .menu a {
     text-decoration: none;
+    color: aliceblue;
+  }
+  .menu a:hover {
+    color: rgb(107, 107, 107);
+  }
+  
+
+  @media screen and (min-width: 600px) {
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10rem;
+      width: 100%;
+      background-color: #dddddd;
+      font-size: 2rem;
+    
+      
+    }
+
+    .menu ul li {
+        
+        padding: 0 5rem;
+      }
+      .menu a {
+       
+        color: rgb(0, 0, 0);
+      }
+
+      .menu #search{
+        width: 50rem;
+      }
+
+      .search__input {
+        background-color:aliceblue;
+        padding: 0.90625rem 5rem 0.90625rem 1rem;
+        border-radius: 1.25rem;
+        width: 100%;
+      }
+    
+
+      
+
 }
